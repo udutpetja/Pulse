@@ -2,10 +2,10 @@
 * {
     font-family: 'Museo Sans', sans-serif;
 }
-h1{
-    font-size: 80px;
+.container {
+    max-width: 950px;
+    margin: 0 auto;
 }
-h2 {
-    font-size: 40px;
-    font-weight: 900;
-}
+@import 'blocks/promo';
+@import 'blocks/header.scss';
+@import 'blocks/buttons';
