@@ -6,10 +6,21 @@
         .header_official {
             display: none;
         }
+        img{
+            width: 200px;
+        }
     }
     .promo .promo__wrapper{
         align-items: center;
-
+        .promo__header{
+            font-size: 32px;
+        }
+        .promo__subheader{
+            font-size: 18px;
+        }
+        .promo_icons{
+            width: 390px;
+        }
     }
     .start{
         .container{
