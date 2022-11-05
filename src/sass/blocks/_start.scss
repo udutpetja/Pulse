@@ -1,0 +1,39 @@
+.start {
+    min-height: 470px;
+    padding: 70px 0 65px 0;
+    .header_start {
+        display: block;
+        text-align: center;
+    }
+    .container{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        .start_block{
+            width: 270px;
+            text-align: center;
+            .start_img{
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 35px;
+            }
+        .start_sudtitle{
+            font-weight: 700;
+            font-size: 18px;
+            color: #0D0D0D;
+            margin-bottom: 20px;
+        }
+        .start_text{
+            font-weight: 300;
+            font-size: 14px;
+            color: #0D0D0D;
+            a{
+                color:$main-color;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+        }
+        }
+    }
+
+}
