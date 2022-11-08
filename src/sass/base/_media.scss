@@ -19,7 +19,7 @@
             font-size: 18px;
         }
         .promo_icons{
-            width: 390px;
+            width: 370px;
         }
     }
     .start{
@@ -38,5 +38,16 @@
             } 
         }
     }
+    .consultation{
+        .container{
+            padding-left: 8px;
+            .title_left{
+                font-size: 30px;
+            }
+            .consultation__descr{
+                font-size: 18px;
+            }
+        }
+    } 
 }
     
