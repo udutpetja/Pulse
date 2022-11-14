@@ -21,4 +21,21 @@
         right: -70px;
         left: auto;
     }
+    .slick-dots{
+        display: flex;
+        width: 119px;
+        justify-content: space-between;
+        margin: 0 auto;
+        li{
+            list-style-type: none;
+            button{
+                background-color: magenta;
+                border-radius: 100%;
+                width: 16px;
+                height: 16px;
+                border: none;
+            }
+    
+        }
+    }
 }
