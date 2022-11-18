@@ -39,9 +39,12 @@
     }
     .catalog__content{
         margin-top: 60px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         flex-wrap: wrap;
+        &_active{
+            display: flex;
+        }
     }
     &-item{
         width: 300px;
@@ -123,7 +126,7 @@
             transform: translateX(0%);
             padding-right: 20px;
             transition: 0.5s all;
-            padding-left: 19px;
+            padding-left: 19px; /* вот ці -19пх знизу */
             margin-bottom: 0;
             list-style-type: none;
             &_active{
@@ -150,7 +153,7 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translateX(calc(-50% - 19px));
+            transform: translateX(calc(-50% - 19px)); /* це для того щоб напис був по середині -19пх це падінги в списку див в верх */
             display: block;
             color: $main-color;
             font-size: 14px;
@@ -159,8 +162,8 @@
             text-transform: uppercase;
             &:hover{
                 color: $main-color;
+                }
             }
-        }
         }
     }
 }
