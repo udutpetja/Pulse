@@ -1,0 +1,31 @@
+.feadback__header{
+    display: block;
+    text-align: center;    
+}
+.feadback__block{
+    display: flex;
+    margin-top: 60px;
+    align-items: flex-start;
+    .feadback_avatar{
+        width: 169px;
+        height: 169px;
+        border-radius: 100%;
+        margin-right: 60px;
+    }
+    .feadback__username{
+        font-weight: 700;
+        font-size: 18px;
+        color: #0D0D0D;
+    }
+    .feadback__marafon{
+        font-weight: 500;
+        font-size: 14px;
+        color: #646464;
+    }
+    .feadback__text{
+        font-weight: 300;
+        font-size: 16px;
+        color: #0D0D0D;
+        margin-top: 10px;
+    }
+}
