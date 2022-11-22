@@ -36,4 +36,23 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    // Modal
+
+    /* щоб зявлялось модальневікно при кліці на кнопку */
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    /* щоб закривалось вікно при кліці на іконку Х */
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
+    /* щоб зявлялось модальне вікно купити годиник та змінювалась назва товара*/
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text()); /* це для назви товара */
+            $('.overlay, #order').fadeIn('slow');
+        })
+    });
 });
