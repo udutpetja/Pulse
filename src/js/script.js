@@ -55,4 +55,31 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         })
     });
+
+    /* щоб перевіряло чи всі поля заповнені і показує що потрібно */
+    function validateForms(form){
+        $(form).validate({
+            rules:{
+                name:"required",
+                phone:"required",
+                email: { /* це щоб перевіряло яи правильно ведений емаіл */
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Будь ласка введіть своє імя",
+                phone: "Будь ласка введіть свій номер телефону",
+                email: {
+                    required: "Будь ласка введіть свою пошту",
+                    email: "Невірний формат пошти name@email.com"
+                }
+            }
+        });
+    };
+    
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
 });
