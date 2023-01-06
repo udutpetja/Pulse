@@ -84,4 +84,20 @@ $(document).ready(function(){
 
     $('input[name=phone]').mask("+38 (999) 999-99-99");
 
+
+    //smooth scroll and psge up 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) { /* це щоб конопка зявиласть після скрола 1600пх */
+            $('.pageup').fadeIn();
+        } else{
+            $('.pageup').fadeOut(); /* це щоб пропадала кнопка */
+        }
+    });
+
+/*     $("a[href^='#']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animete({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    }); */
+
 });
