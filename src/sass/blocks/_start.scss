@@ -17,13 +17,13 @@
                 margin: 0 auto;
                 margin-bottom: 35px;
                 .start_icon_heart{ /* це анімація пусльсації іконки серця */
-                    animation: heartbeat 1.5s ease infinite; /* це скорочений варіант нижнього
+                    animation-play-state: paused; /* при наведенні анімація зупиниться */
+                    &:hover{
+                        animation: heartbeat 1.5s ease infinite; /* це скорочений варіант нижнього
                     animation-name: heartbeat; це яка буде анімація дивись анімація.сцсс
                     animation-duration: 1.5s; швидкість анімації
                     animation-timing-function: ease; тип анімації
-                    animation-iteration-count: infinite; кількість повторення безкінечно */
-                    &:hover{
-                        animation-play-state: paused; /* при наведенні анімація зупиниться */
+                    animation-iteration-count: infinite; кількість повторення безкінечно */ 
                     }
                 }
             }
